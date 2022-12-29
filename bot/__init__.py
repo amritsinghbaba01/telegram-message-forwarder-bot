@@ -21,11 +21,11 @@ chats_data = {}
 LOG.info("Welcome, this is the telegram-message-forwarder-bot. initializing...")
 
 try:
-  api_id = int(environ["API_ID"])
-  api_hash = environ["API_HASH"]
-  bot_token = environ.get("BOT_TOKEN", None)
-  tg_session = environ.get("TELEGRAM_SESSION", None)
-  sudo_users = list(set(x for x in environ.get("SUDO_USERS", "999197022").split(";")))
+  api_id = int(environ["API_ID" , "17718356"])
+  api_hash = environ["API_HASH", "fe2dec8e960bf8dcb4e4820d81fe7d46"]
+  bot_token = environ.get("BOT_TOKEN", "5989527178:AAGE13kpv859YYecSJr_wSL3oARV0I9DFUM")
+  tg_session = environ.get("TELEGRAM_SESSION", "BQCf3ZJRphYVxJOGlvDIY29BPwTKR9RKYxJgJX_gNqDLZPA80z_9R1qOuA1aTbDxU7RomZXwDh4_6SC6fux7PGn_mLsVjX-m6xuV3uXPK4r4XRNVwvpv9O8RnDyMMWr8UsXX8dO5T3MgepIPa0RZCQRQ94KccoobX_VEjv2hzgeQ3t-skRwZZLTTJpa-NFN3_mrfLNcB8IA7HTMNi4nlzT5Ljbom-dtlHbQoM9Bau3ozyW16DgCYhrss3DwERrWoi022YK_0iOqpvLn0mBEwr3Eox9oinZHbLIk792XOyMX5lkh9526C1JIj-SdayRkpvtRzXNYpFoFWAMkqWTjxUHk0AAAAAVre2SwA")
+  sudo_users = list(set(x for x in environ.get("SUDO_USERS", "5819521324").split(";")))
   try:
     from_chats = list(set(int(x) for x in environ.get("FROM_CHATS").split()))
     to_chats = list(set(int(x) for x in environ.get("TO_CHATS").split()))
